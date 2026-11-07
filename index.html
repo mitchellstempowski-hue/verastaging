@@ -223,6 +223,13 @@ figcaption strong{color:var(--ink)}
 .compliance li{padding-left:28px;position:relative;color:#4C4234}
 .compliance li::before{content:"✓";position:absolute;left:0;color:var(--accent-dark);font-weight:700}
 .compliance li strong{color:var(--ink)}
+/* Founder */
+.founder{background:var(--surface);border:1px solid var(--line);border-radius:26px;padding:40px 44px;display:flex;gap:32px;align-items:flex-start;box-shadow:var(--shadow)}
+.founder img{width:140px;height:140px;border-radius:18px;object-fit:cover;flex:none}
+.founder h2{margin-bottom:.45em}
+.founder p{color:#4C4234;max-width:640px}
+.founder .contact-line{margin-top:16px;font-weight:600;color:var(--ink)}
+@media(max-width:640px){.founder{flex-direction:column;padding:32px 24px;gap:20px}}
 
 /* Pricing */
 .pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:44px;align-items:stretch}
@@ -321,8 +328,8 @@ footer .fine{border-top:1px solid #4A4136;margin-top:36px;padding-top:20px;font-
     </div>
     <figure>
       <div class="ba" data-ba>
-        <img src="assets/img/after-01.jpg" alt="Living room after virtual staging by Vera Staging">
-        <img class="before-img" src="assets/img/before-01.jpg" alt="The same living room empty, before virtual staging">
+        <img width="1600" height="1067" src="assets/img/after-01.jpg" alt="Living room after virtual staging by Vera Staging">
+        <img width="1600" height="1067" class="before-img" src="assets/img/before-01.jpg" alt="The same living room empty, before virtual staging">
         <span class="tag before">Before</span>
         <span class="tag after">After</span>
         <span class="tag staged">Virtually staged</span>
@@ -363,8 +370,8 @@ footer .fine{border-top:1px solid #4A4136;margin-top:36px;padding-top:20px;font-
     <div class="samples-grid">
       <figure>
         <div class="ba" data-ba>
-          <img src="assets/img/after-01.jpg" alt="Living room after virtual staging" loading="lazy">
-          <img class="before-img" src="assets/img/before-01.jpg" alt="Living room before virtual staging, empty" loading="lazy">
+          <img width="1600" height="1067" src="assets/img/after-01.jpg" alt="Living room after virtual staging" loading="lazy">
+          <img width="1600" height="1067" class="before-img" src="assets/img/before-01.jpg" alt="Living room before virtual staging, empty" loading="lazy">
           <span class="tag before">Before</span>
           <span class="tag after">After</span>
           <span class="tag staged">Virtually staged</span>
@@ -376,8 +383,8 @@ footer .fine{border-top:1px solid #4A4136;margin-top:36px;padding-top:20px;font-
       </figure>
       <figure>
         <div class="ba" data-ba>
-          <img src="assets/img/after-02.jpg" alt="Primary bedroom after virtual staging" loading="lazy">
-          <img class="before-img" src="assets/img/before-02.jpg" alt="Primary bedroom before virtual staging, empty" loading="lazy">
+          <img width="1600" height="1067" src="assets/img/after-02.jpg" alt="Primary bedroom after virtual staging" loading="lazy">
+          <img width="1600" height="1067" class="before-img" src="assets/img/before-02.jpg" alt="Primary bedroom before virtual staging, empty" loading="lazy">
           <span class="tag before">Before</span>
           <span class="tag after">After</span>
           <span class="tag staged">Virtually staged</span>
@@ -389,8 +396,8 @@ footer .fine{border-top:1px solid #4A4136;margin-top:36px;padding-top:20px;font-
       </figure>
       <figure>
         <div class="ba" data-ba>
-          <img src="assets/img/after-03.jpg" alt="Dining room after virtual staging" loading="lazy">
-          <img class="before-img" src="assets/img/before-03.jpg" alt="Dining room before virtual staging, empty" loading="lazy">
+          <img width="1600" height="1067" src="assets/img/after-03.jpg" alt="Dining room after virtual staging" loading="lazy">
+          <img width="1600" height="1067" class="before-img" src="assets/img/before-03.jpg" alt="Dining room before virtual staging, empty" loading="lazy">
           <span class="tag before">Before</span>
           <span class="tag after">After</span>
           <span class="tag staged">Virtually staged</span>
@@ -443,6 +450,21 @@ footer .fine{border-top:1px solid #4A4136;margin-top:36px;padding-top:20px;font-
         <li><strong>Realcomp-ready</strong> — serving metro Detroit means Realcomp's caption and permitted-edits rules are our default standard, applied everywhere.</li>
         <li><strong>Your brokerage stays in control</strong> — tell us your MLS in the order form and we format the pack to its current rules.</li>
       </ul>
+    </div>
+  </div>
+</section>
+
+<!-- FOUNDER -->
+<section id="founder" style="padding-top:0">
+  <div class="wrap">
+    <div class="founder">
+      <img src="assets/img/founder.jpg" alt="Mitchell Stempowski, founder of Vera Staging" width="150" height="150" loading="lazy">
+      <div>
+        <p class="eyebrow">Who's behind Vera Staging</p>
+        <h2>A person checks every photo. Here's the person.</h2>
+        <p>Vera Staging is run by Mitchell Stempowski, founder of MS ECOM LLC in Troy, Michigan. No marketplace roulette, no anonymous queue: every order is staged, then checked by a person against the same list — furniture scaled to the room, one consistent light direction, real contact shadows, the home itself untouched — before it goes back to you. If a photo can't be staged honestly, we say so and refund it.</p>
+        <p class="contact-line">Questions go to a person, too: <a href="mailto:mitchell@msecomllc.com">mitchell@msecomllc.com</a> · <a href="tel:+15862039434">(586) 203-9434</a></p>
+      </div>
     </div>
   </div>
 </section>
@@ -519,11 +541,11 @@ footer .fine{border-top:1px solid #4A4136;margin-top:36px;padding-top:20px;font-
       <div class="proofstrip">
         <div class="proof-imgs">
           <figure>
-            <img src="assets/img/before-01.jpg" alt="Empty room before virtual staging" loading="lazy">
+            <img width="1600" height="1067" src="assets/img/before-01.jpg" alt="Empty room before virtual staging" loading="lazy">
             <span class="ptag">Before</span>
           </figure>
           <figure>
-            <img src="assets/img/after-01.jpg" alt="The same room after Vera Staging virtual staging" loading="lazy">
+            <img width="1600" height="1067" src="assets/img/after-01.jpg" alt="The same room after Vera Staging virtual staging" loading="lazy">
             <span class="ptag">After</span>
           </figure>
         </div>
