@@ -252,6 +252,14 @@ figcaption strong{color:var(--ink)}
 .formcard .row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 @media(max-width:560px){.formcard .row{grid-template-columns:1fr}.formcard{padding:26px 20px}}
 .formcard button{width:100%;margin-top:24px}
+.proofstrip{display:flex;gap:20px;align-items:center;background:var(--accent-soft);border:1px solid var(--line);border-radius:12px;padding:16px;margin-bottom:6px}
+.proof-imgs{display:flex;gap:10px;flex:none}
+.proof-imgs figure{position:relative;margin:0;width:118px}
+.proof-imgs img{width:100%;max-height:180px;aspect-ratio:3/2;object-fit:cover;border-radius:8px;display:block}
+.proof-imgs .ptag{position:absolute;top:8px;left:8px;font-size:.66rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;background:rgba(30,24,18,.72);color:#fff;padding:3px 8px;border-radius:999px}
+.proof-text p{color:#4C4234;font-size:.94rem;line-height:1.5}
+.proof-text .proof-head{font-weight:700;color:var(--ink);font-size:1.02rem;margin-bottom:4px}
+@media(max-width:560px){.proofstrip{flex-direction:column;align-items:flex-start}}
 .formnote{color:var(--muted);font-size:.86rem;margin-top:14px;text-align:center}
 .order-side p{color:var(--muted);margin-top:14px}
 .order-side ul{list-style:none;margin-top:18px}
@@ -508,6 +516,22 @@ footer .fine{border-top:1px solid #4A4136;margin-top:36px;padding-top:20px;font-
       </ul>
     </div>
     <div class="formcard">
+      <div class="proofstrip">
+        <div class="proof-imgs">
+          <figure>
+            <img src="assets/img/before-01.jpg" alt="Empty room before virtual staging" loading="lazy">
+            <span class="ptag">Before</span>
+          </figure>
+          <figure>
+            <img src="assets/img/after-01.jpg" alt="The same room after Vera Staging virtual staging" loading="lazy">
+            <span class="ptag">After</span>
+          </figure>
+        </div>
+        <div class="proof-text">
+          <p class="proof-head">$29 per photo. Back within 24 hours.</p>
+          <p>First photo free for new customers — send one room and judge the quality before you pay anything. Every order includes the MLS disclosure pack.</p>
+        </div>
+      </div>
       <form action="https://api.web3forms.com/submit" method="POST">
         <input type="hidden" name="access_key" value="0df91239-bbf8-4d91-a840-ad835f7f3ab9">
         <input type="hidden" name="subject" value="Vera Staging Order Request">
@@ -539,6 +563,7 @@ footer .fine{border-top:1px solid #4A4136;margin-top:36px;padding-top:20px;font-
             <label for="f-package">Package *</label>
             <select id="f-package" name="package" required>
               <option value="">Choose a package…</option>
+              <option value="Free Sample — 1 photo (new customers)">Free Sample — 1 photo, free (new customers)</option>
               <option value="Single Photo — $29/photo">Single Photo — $29/photo</option>
               <option value="Listing Pack — $199 (8 photos)">Listing Pack — $199 (8 photos)</option>
               <option value="Brokerage / Team Monthly — $399/mo">Brokerage / Team Monthly — $399/mo</option>
